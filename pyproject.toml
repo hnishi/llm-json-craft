@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "llm-json-craft"
+version = "0.1.0"
+description = ""
+authors = ["hnishi <nishigami2509@gmail.com>"]
+homepage = "https://github.com/hnishi"
+repository = "https://github.com/hnishi/llm-json-craft"
+readme = "README.md"
+packages = [{include = "llm_json_craft", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest-watch = "^4.2.0"
+pytest-mock = "^3.14.0"
+pytest-cov = "^5.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
